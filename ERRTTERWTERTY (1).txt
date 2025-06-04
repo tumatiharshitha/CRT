@@ -1,0 +1,98 @@
+31/5/25
+SQL
+create table student
+(
+   id int,
+   name varchar(100),
+   age int,
+   email varchar(150)
+);
+S1QL
+1)
+create table student
+(
+   id int,
+   name varchar(100),
+   age int,
+   email varchar(200)
+
+);
+
+insert into student(id,name,age,email) value(1,"umesh",20,"sulekeriumesh.com");
+insert into student(id,name,age,email) value(2,"sajeedh",30,"abc.com");
+select * from student;
+
+Q) create a table employ id, employ name,salary,department
+create table employ
+(
+   id int,
+   name varchar(100),
+   department varchar(150),
+   salary int
+);
+insert into employ(id,name,department, salary) value(10,"umesh", "ece", 10000 );
+insert into employ(id,name,department, salary) value(20,"sajeedh", "cse", 20000 );
+select * from employ;
+
+Q)SALES:
+Create table sales (
+  sno INT,
+  product_name VARCHAR(100),
+  quantity VARCHAR(150),
+  category VARCHAR(300)
+);
+
+insert into sales (sno, product_name, quantity, category)
+values
+  (1, 'cup', 'five', '100'),
+  (2, 'keypad', 'four', '200'),
+  (3, 'mouse', 'five', '300'),
+  (4, 'wire', 'four', '400'),
+  (5, 'cpu', 'five', '500'),
+  (6, 'display', 'four', '600'),
+  (8, 'chair', 'five', '700'),
+  (9, 'remote', 'four', '800'),
+  (10, 'fan', 'five', '900');
+
+select * from sales;
+OUTPUT
+sno	product_name	quantity	category
+1	cup	five	100
+2	keypad	four	200
+3	mouse	five	300
+4	wire	four	400
+5	cpu	five	500
+6	display	four	600
+8	chair	five	700
+9	remote	four	800
+10	fan	five	900
+
+Q)
+Create table sales (
+  sno INT,
+  product_name VARCHAR(100),
+  quantity VARCHAR(150),
+  category VARCHAR(300)
+);
+
+insert into sales (sno, product_name, quantity, category)
+values
+  (1, 'cup', 'five', '100'),
+  (2, 'keypad', 'four', '200'),
+  (3, 'mouse', 'five', '300'),
+  (4, 'wire', 'four', '400'),
+  (5, 'cpu', 'five', '500'),
+  (6, 'display', 'four', '600'),
+  (8, 'chair', 'five', '700'),
+  (9, 'remote', 'four', '800'),
+  (10, 'fan', 'five', '900');
+select sno, product_name, quantity, category
+from sales
+where category="400";
+OUTPUT:
+sno	product_name	quantity	category
+4	wire	four	400
+
+SELECT SUM(quantity) AS total_sales
+FROM sales;
+

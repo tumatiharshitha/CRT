@@ -1,0 +1,31 @@
+list=[1,2,3,4,5]
+print(0,len([list]))
+
+lst=[12,21,30,13]
+for i in range(0,len(lst)):
+    if(i%2==0):
+        print([i])
+        
+lst=[12,21,30,13]
+for i in range(0,len(lst)):
+    if(i%2==1):
+        print([i],end=" ")
+
+l=[12,13,14,15]
+sum=0
+for i in range(0,len(l)):
+    sum=sum+l[i]
+    print({sum})
+
+m=[12,21,30,13]
+for i in range(0,len(m)):
+    if(i%2==0):
+        print(m[i],end=" ")
+        
+k=[12,21,30,13]
+for i in range(0,len(k)):
+    if(i%2==1):
+        print(k[i],end="")
+        
+
+
